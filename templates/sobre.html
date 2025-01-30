@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sobre - Site da Igreja</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/icon_igreja.png') }}" type="image/png"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('inicial') }}">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo" />
+        </a>
+        <a href="{{ url_for('inicial') }}" class="church-name">Igreja Pentecostal Cristo Vive</a> 
+        <div class="nav-links">
+            <a href="{{ url_for('inicial') }}" class="nav-link">Inicial</a>
+            <a href="{{ url_for('sobre') }}" class="nav-link">Sobre</a>
+            <a href="{{ url_for('eventos') }}" class="nav-link">Eventos</a>
+            <a href="{{ url_for('contatos') }}" class="nav-link">Contatos</a>
+            <a href="{{ url_for('sou_novo') }}" class="btn-sou-novo">Sou novo aqui!</a>
+        </div>
+    </nav>
+
+
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.562515114824!2d-51.05697970000001!3d-28.9706978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951e9331222a3ae3%3A0xbc4ff054dad3df4b!2sIgreja%20Cristo%20Vive!5e0!3m2!1spt-BR!2sbr!4v1738097784991!5m2!1spt-BR!2sbr" 
+        width="2000"
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="footer">
+        <p>© 2025 Igreja Pentecostal Cristo Vive. <br>Desenvolvido por<a href="https://www.linkedin.com/in/bruno-d-avila" target="_blank" style="color: red; text-decoration: none;" onmouseover="this.style.textDecoration='underline'; this.style.borderBottom='2px solid red';" onmouseout="this.style.textDecoration='none'; this.style.borderBottom='none';">Bruno</a>e<a href="https://www.linkedin.com/in/lucas-rizzon-5b907b346" target="_blank" style="color: red; text-decoration: none;" onmouseover="this.style.textDecoration='underline'; this.style.borderBottom='2px solid red';" onmouseout="this.style.textDecoration='none'; this.style.borderBottom='none';">Lucas.</a><br>Todos os direitos reservados.</p>
+        <a href="https://www.instagram.com/jovenscristovivee?igsh=MW12cDIzejAzYXkyaQ=="><i class="fab fa-instagram"></i></a>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
