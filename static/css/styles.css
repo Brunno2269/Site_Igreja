@@ -91,7 +91,6 @@ nav .nav-link:hover::before {
     color: #b8b8b8; 
 }
 
-
 .btn-sou-novo {
     background: #000000; 
     color: #ffffff;
@@ -152,4 +151,51 @@ nav .nav-link:hover::before {
     color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .church-name {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
 }
